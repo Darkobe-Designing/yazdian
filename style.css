@@ -1,0 +1,401 @@
+/* === فونت‌ها === */
+@font-face {
+  font-family: "Peyda";
+  src: url("Peyda-ExtraBold[@mimvid] (2).ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("picoopic-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* === تنظیمات عمومی صفحه === */
+body {
+  font-family: "Peyda", "Vazirmatn", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d2a437;
+  color: #fff;
+  direction: rtl;
+  display: flex;
+  justify-content: center; /* وسط افقی */
+  align-items: center; /* وسط عمودی */
+  min-height: 100vh;
+  background-image: url(FILE/dd.png);
+  background-repeat: repeat;
+}
+
+/* === ساختار اصلی container === */
+.container {
+  width: 95%;
+  max-width: 500px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* === لوگو === */
+.logo {
+  width: 220px;
+  height: 260px;
+  margin: 0 auto 10px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* === بخش تاریخ و زمان === */
+.datetime-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-box {
+  background-color: #d2a437;
+  border: 2px solid #6c4e20;
+  color: #6c4e20;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 40px;
+  text-align: center;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.time-box {
+  background-color: #d2a437;
+  border: 2px solid #6c4e20;
+  color: #6c4e20;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 40px;
+  text-align: center;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* === بخش قیمت طلا === */
+.gold-section,
+.gold-section-two {
+  text-align: center;
+}
+
+.gold-title,
+.gold-title-two {
+  background-color: #6c4e20;
+  color: #d2a437;
+  font-weight: 800;
+  font-size: 24px;
+  padding: 2px 187px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.gold-row,
+.gold-row-two {
+  background-color: #d2a437;
+  border: 2px solid #6c4e20;
+  color: #6c4e20;
+  border-radius: 40px;
+  padding: 6px 18px;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.gold-row .dots,
+.gold-row-two .dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted #6c4e20;
+  margin: 0 8px;
+  height: 7px;
+}
+
+.gold-note {
+  display: flex;
+  color: #6c4e20;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: -5px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+/* === کارت‌ها و آیکون‌ها === */
+.row-cards {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 6px 1px 4px 0px;
+}
+
+.row-cards1 {
+  display: inline-block;
+  gap: 4px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 6px 7px 4px 7px;
+}
+
+.row-cards .card,
+.row-cards1 .card {
+  flex: 1 1 calc(50% - 8px);
+  max-width: calc(50% - 8px);
+  min-width: 130px;
+  text-decoration: none;
+}
+
+/* کارت‌ها */
+.card-top,
+.card-top1 {
+  display: flex;
+  align-items: center;
+  background-color: #6c4e20;
+  border-radius: 50px;
+  height: auto;
+  color: #d2a437;
+}
+
+.card-top {
+  width: 166px;
+}
+
+.card-top1 {
+  width: 100%;
+  max-width: 490px;
+}
+
+/* دایره آیکون */
+.icon-circle {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #6c4e20;
+  border: 2px solid #d2a437;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px -1px 0px #d2a437;
+}
+
+.icon-circle img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+/* متن کارت */
+.info-box {
+  flex-grow: 1;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #d2a437;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* شماره کارت‌ها */
+.phone-text1 {
+  font-family: "Bold";
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #d2a437;
+}
+.phone-text2 {
+  font-family: "Bold";
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #d2a437;
+}
+.phone-text3 {
+  font-family: "Bold";
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #d2a437;
+}
+.phone-text4 {
+  font-family: "Bold";
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #d2a437;
+}
+
+.phone-text5 {
+  font-family: "Peyda";
+  font-size: 19px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  color: #d2a437;
+}
+
+/* انیمیشن و هاور کارت‌ها */
+.row-cards .card .card-top,
+.row-cards1 .card .card-top1,
+.row-cards .card .icon-circle {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.row-cards .card:hover .card-top,
+.row-cards1 .card:hover .card-top1 {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.row-cards .card:hover .icon-circle,
+.row-cards1 .card:hover .icon-circle {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* === واکنش‌گرایی موبایل و دسکتاپ === */
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 180px;
+    height: 200px;
+  }
+
+  .date-box,
+  .time-box {
+    font-size: 18px;
+    padding: 8px 8px 6px 8px;
+  }
+
+  .gold-title,
+  .gold-title-two {
+    font-size: 20px;
+    padding: 2px 100px;
+  }
+
+  .gold-row,
+  .gold-row-two {
+    font-size: 16px;  
+    padding: 8px 8px 4px 8px;
+  }
+
+  .gold-note {
+    font-size: 13px;
+  }
+
+  .phone-text1 {
+    font-size: 16px;
+    letter-spacing: 0.7px;
+  }
+  .phone-text2 {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+  }
+  .phone-text3 {
+    font-size: 16px;
+    letter-spacing: 0.1px;
+  }
+  .phone-text4 {
+    font-size: 15px;
+    letter-spacing: 0.4px;
+  }
+  .phone-text5 {
+    font-size: 11.6px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .date-box,
+  .time-box {
+    font-size: 22px;
+    padding: 4px 10px 0 10px;
+  }
+
+  .gold-title,
+  .gold-title-two {
+    font-size: 26px;
+  }
+
+  .gold-row,
+  .gold-row-two {
+    font-size: 20px;
+    padding: 4px 8px;
+  }
+
+  .gold-note {
+    font-size: 19px;
+  }
+
+  .info-text {
+    font-size: 23px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    margin-right: 3px;
+  }
+
+  .row-cards .card,
+  .row-cards1 .card {
+    flex: 1 1 auto;
+    max-width: 48%;
+  }
+
+  .info-box {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .gold-title-text {
+    margin-right: 8px;
+    margin-top: 4px;
+  }
+
+  .gold-dots {
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  .gold-price {
+    margin-left: 8px;
+    margin-top: 4px;
+  }
+}

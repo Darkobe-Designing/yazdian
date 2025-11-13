@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>کارت ویزیت دیجیتال</title>
+
+    <!-- فونت‌ها -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- لوگو -->
+      <div class="logo">
+        <img src="FILE/آرم-شرکت2-(2).png" alt="لوگو فروشگاه" />
+      </div>
+
+      <!-- بخش تاریخ و زمان -->
+      <div class="datetime-box">
+        <div class="date-box" id="date-box">تاریخ: ۱۴۰۴/۰۸/۱۵</div>
+        <div class="time-box" id="time-box">زمان: ۲۲:۵۵</div>
+      </div>
+
+      <!-- بخش قیمت طلا -->
+      <div class="gold-section">
+        <div class="gold-title">قیمت طلا</div>
+
+        <div class="gold-row">
+          <span class="gold-title-text">یک گرم عیار ۱۸</span>
+          <span class="gold-dots">.................................</span>
+          <span class="gold-price">۱۱.۵۵۸.۳۰۰</span>
+        </div>
+
+        <div class="gold-row">
+          <span class="gold-title-text">یک مثقال عیار ۱۸</span>
+          <span class="gold-dots">..............................</span>
+          <span class="gold-price">۵۰.۰۵۵.۰۰۰</span>
+        </div>
+      </div>
+
+      <!-- بخش قیمت سکه -->
+      <div class="gold-section-two">
+        <div class="gold-title">قیمت سکه</div>
+
+        <div class="gold-row">
+          <span class="gold-title-text">سکه امامی</span>
+          <span class="gold-dots"
+            >........................................</span
+          >
+          <span class="gold-price">۱۱۹.۵۰۵.۰۰۰</span>
+        </div>
+
+        <div class="gold-row">
+          <span class="gold-title-text">نیم سکه</span>
+          <span class="gold-dots"
+            >...........................................</span
+          >
+          <span class="gold-price">۶۲.۰۰۰.۰۰۰</span>
+        </div>
+
+        <div class="gold-row">
+          <span class="gold-title-text">ربع سکه</span>
+          <span class="gold-dots"
+            >...........................................</span
+          >
+          <span class="gold-price">۳۶.۴۹۰.۰۰۰</span>
+        </div>
+      </div>
+
+      <div class="gold-note">
+        قیمت‌ها بر اساس آخرین به‌روزرسانی بازار طلا و سکه می‌باشد.
+      </div>
+
+      <!-- ردیف کارت‌ها -->
+      <div class="row-cards">
+        <!-- شماره ۱ -->
+        <a href="tel:09190634191" class="card">
+          <div class="card-top">
+            <div class="icon-circle">
+              <img src="FILE/Management.png" alt="تلفن" />
+            </div>
+            <div class="info-box">
+              <span class="phone-text1">09190634191</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- شماره ۲ -->
+        <a href="tel:02538838915" class="card">
+          <div class="card-top">
+            <div class="icon-circle">
+              <img src="FILE/Support.png" alt="تلفن" />
+            </div>
+            <div class="info-box">
+              <span class="phone-text2">02538838951</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="row-cards">
+        <!-- شماره ۳ -->
+        <a href="https://eitaa.com/Yazdiangold" class="card">
+          <div class="card-top">
+            <div class="icon-circle">
+              <img src="FILE/Management.png" alt="پیام‌رسان" />
+            </div>
+            <div class="info-box">
+              <span class="phone-text3">Yazdiangold@</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- شماره ۴ -->
+        <a href="https://instagram.com/yazdian.gold" class="card">
+          <div class="card-top">
+            <div class="icon-circle">
+              <img src="FILE/Support.png" alt="اینستاگرام" />
+            </div>
+            <div class="info-box">
+              <span class="phone-text4">yazdian.gold@</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="row-cards1">
+        <!-- شماره ۵ (آدرس) -->
+        <a href="https://nshn.ir/76_bsObNexQ-Ns" class="card">
+          <div class="card-top1">
+            <div class="icon-circle">
+              <img src="FILE/Management.png" alt="آدرس" />
+            </div>
+            <div class="info-box">
+              <span class="phone-text5">
+                قم، خیابان امامزاده ابراهیم، خیابان ۲۲بهمن، پلاک ۵۰
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- اسکریپت ساعت -->
+    <script>
+      function updateTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const persianNumbers = [
+          "۰",
+          "۱",
+          "۲",
+          "۳",
+          "۴",
+          "۵",
+          "۶",
+          "۷",
+          "۸",
+          "۹",
+        ];
+        const convert = (num) => num.replace(/\d/g, (d) => persianNumbers[d]);
+        document.getElementById("time-box").innerText =
+          "زمان: " + convert(hours) + ":" + convert(minutes);
+      }
+
+      function toShamsi(dt) {
+        return new Intl.DateTimeFormat("fa-IR-u-ca-persian", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        }).format(dt);
+      }
+
+      function updateDate() {
+        document.getElementById("date-box").innerText =
+          "تاریخ: " + toShamsi(new Date());
+      }
+
+      updateTime();
+      updateDate();
+      setInterval(updateTime, 60000);
+      setInterval(updateDate, 3600000);
+    </script>
+  </body>
+</html>
