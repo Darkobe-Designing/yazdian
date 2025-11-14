@@ -266,10 +266,8 @@ body {
 }
 
 /* === واکنش‌گرایی موبایل و دسکتاپ === */
-
-@media (min-width: 370px) and (max-width: 530px) {
-
-  .container{
+@media (min-width: 360px) and (max-width: 370px) {
+  .container {
     padding: 9px;
   }
   .logo {
@@ -299,13 +297,134 @@ body {
     flex-shrink: 0;
     margin-right: 0px;
     margin-top: 5px;
-}
+  }
 
-.gold-price {
+  .gold-price {
     flex-shrink: 0;
     margin-left: 0px;
     margin-top: 5px;
+  }
+
+  .gold-row {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .gold-note {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+
+  .row-cards {
+    display: flex;
+    gap: 2px;
+    margin: 6px -2px 4px 0px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: baseline;
+  }
+
+  .card-top {
+    width: 160px;
+  }
+
+  .icon-circle {
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #6c4e20;
+    border: 2px solid #d2a437;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px -1px 0px #d2a437;
+  }
+
+  .phone-text1 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-left: 0px;
+  }
+
+  .phone-text2 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-left: -2px;
+  }
+
+  .phone-text3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 0px;
+  }
+
+  .phone-text4 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: -2px;
+  }
+
+  .row-cards1 {
+    display: inline-block;
+    gap: 4px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4px 7px 4px -5px;
+  }
+
+  .card-top1 {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .phone-text5 {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-right: 6px;
+    word-spacing: -4px;
+    padding-left: 0px;
+  }
 }
+
+@media (min-width: 370px) and (max-width: 530px) {
+  .container {
+    padding: 9px;
+  }
+  .logo {
+    width: 220px;
+    height: 200px;
+    margin: 0 auto 10px;
+  }
+
+  .date-box,
+  .time-box {
+    font-size: 14px;
+    padding: 4px 10px 0 10px;
+  }
+
+  .gold-title,
+  .gold-title-two {
+    background-color: #6c4e20;
+    color: #d2a437;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 2px 110px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+  }
+
+  .gold-title-text {
+    flex-shrink: 0;
+    margin-right: 0px;
+    margin-top: 5px;
+  }
+
+  .gold-price {
+    flex-shrink: 0;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
 
   .gold-row {
     font-size: 14px;
@@ -653,4 +772,3 @@ body {
     margin-top: 5px;
   }
 }
-
