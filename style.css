@@ -267,91 +267,110 @@ body {
 
 /* === واکنش‌گرایی موبایل و دسکتاپ === */
 
-@media (max-width: 530px) {
+@media (min-width: 370px) and (max-width: 530px) {
+  .logo {
+    width: 220px;
+    height: 200px;
+    margin: 0 auto 10px;
+  }
+
   .date-box,
   .time-box {
-    font-size: 22px;
+    font-size: 18px;
     padding: 4px 10px 0 10px;
   }
 
   .gold-title,
   .gold-title-two {
-    font-size: 26px;
+    background-color: #6c4e20;
+    color: #d2a437;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 2px 110px;
+    border-radius: 50px;
+    margin-bottom: 10px;
   }
 
   .gold-row {
-    font-size: 20px;
+    font-size: 14px;
     padding: 4px 8px;
   }
 
   .gold-note {
-    font-size: 19px;
-  }
-
-  .info-text {
-    font-size: 23px;
-    letter-spacing: 3px;
-    margin-top: 5px;
-    margin-right: 3px;
-  }
-
-  .row-cards .card,
-  .row-cards1 .card {
-    flex: 1 1 auto;
-    max-width: 48%;
-  }
-
-  .info-box {
-    font-size: 14px;
-    padding: 0;
-  }
-
-  .gold-title-text {
+    font-size: 13.5px;
     margin-right: 8px;
-    margin-top: 4px;
   }
 
-  .gold-dots {
-    flex-grow: 1;
-    text-align: center;
-    margin: 0 4px;
-    height: 1px;
-    border-bottom: 2px dotted #6c4e20;
-    margin-top: 6px;
-  }
-
-  .gold-price {
-    margin-left: 8px;
-    margin-top: 4px;
+  .row-cards {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 6px -3px 4px 0px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: baseline;
   }
 
   .card-top {
-    width: 237px;
+    width: 175px;
+  }
+
+  .icon-circle {
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #6c4e20;
+    border: 2px solid #d2a437;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px -1px 0px #d2a437;
   }
 
   .phone-text1 {
-    font-size: 22px;
-    letter-spacing: 4px;
-    margin-left: 12px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-left: -2px;
   }
+
   .phone-text2 {
-    font-size: 22px;
-    letter-spacing: 4px;
-    margin-left: 12px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-left: -4px;
   }
+
   .phone-text3 {
-    font-size: 20px;
-    letter-spacing: 4px;
-    margin-left: 12px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 0px;
   }
+
   .phone-text4 {
-    font-size: 19px;
-    letter-spacing: 4px;
-    margin-left: 12px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: -2px;
   }
+
+  .row-cards1 {
+    display: inline-block;
+    gap: 4px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4px -4px 4px -5px;
+  }
+
+  .card-top1 {
+    width: 100%;
+    max-width: 357px;
+  }
+
   .phone-text5 {
-    font-size: 19px;
+    font-size: 14.8px;
     margin-top: 5px;
+    margin-right: 6px;
+    word-spacing: -4px;
+    padding-left: 0px;
   }
 }
 
