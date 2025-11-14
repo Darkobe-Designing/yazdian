@@ -200,8 +200,6 @@ body {
   width: 60%;
   height: 60%;
   object-fit: contain;
-  margin-bottom: 2px;
-  margin-right: 2px;
 }
 
 /* متن کارت */
@@ -211,7 +209,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-    padding: 0 0px 0px 10px;
+  padding: 0 0px 0px 10px;
   font-size: 14px;
   font-weight: 600;
   color: #d2a437;
@@ -314,7 +312,7 @@ body {
 
   .gold-row,
   .gold-row-two {
-    font-size: 16px;  
+    font-size: 16px;
     padding: 8px 8px 4px 8px;
   }
 
