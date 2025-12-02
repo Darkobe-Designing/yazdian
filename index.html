@@ -22,7 +22,7 @@
       <!-- بخش تاریخ و زمان -->
       <div class="datetime-box">
         <div class="date-box" id="date-box">تاریخ: ۱۴۰۴/۰۸/۱۵</div>
-        <div class="time-box" id="time-box">زمان: ۲۲:۵۵</div>
+        <div class="time-box" id="time-box">زمان: 12:33</div>
       </div>
 
       <!-- بخش قیمت طلا -->
@@ -141,26 +141,6 @@
 
     <!-- اسکریپت ساعت -->
     <script>
-      function updateTime() {
-        const now = new Date();
-        const hours = now.getHours().toString().padStart(2, "0");
-        const minutes = now.getMinutes().toString().padStart(2, "0");
-        const persianNumbers = [
-          "۰",
-          "۱",
-          "۲",
-          "۳",
-          "۴",
-          "۵",
-          "۶",
-          "۷",
-          "۸",
-          "۹",
-        ];
-        const convert = (num) => num.replace(/\d/g, (d) => persianNumbers[d]);
-        document.getElementById("time-box").innerText =
-          "زمان: " + convert(hours) + ":" + convert(minutes);
-      }
 
       function toShamsi(dt) {
         return new Intl.DateTimeFormat("fa-IR-u-ca-persian", {
@@ -175,9 +155,7 @@
           "تاریخ: " + toShamsi(new Date());
       }
 
-      updateTime();
       updateDate();
-      setInterval(updateTime, 60000);
       setInterval(updateDate, 3600000);
     </script>
   </body>
